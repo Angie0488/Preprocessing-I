@@ -145,12 +145,14 @@ body {
   justify-content: space-around;
 }
 body {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
+  padding: 1%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
   body {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -161,7 +163,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     background: lightblue;
   }
