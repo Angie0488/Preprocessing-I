@@ -148,16 +148,36 @@ body {
   width: 1020px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
 .container {
   width: 100%;
   padding: 10px;
   background: lightslategray;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background: lightblue;
+  }
 }
 .container nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
   margin: 5% 0 5% 50%;
+}
+@media (max-width: 500px) {
+  .container nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
 }
 .container nav a {
   font-size: 1.2rem;
@@ -171,12 +191,18 @@ body {
   justify-content: space-between;
   margin: 5% 0;
 }
+@media (max-width: 500px) {
+  .container .intro {
+    flex-direction: column-reverse;
+  }
+}
 .container .intro h1 {
   font-size: 4rem;
   display: flex;
   align-items: flex-end;
   font-family: 'Courgette', cursive;
   text-shadow: 2px 4px white;
+  padding-top: 5%;
 }
 .container .aboutMe {
   display: flex;
@@ -188,7 +214,7 @@ body {
 .container .aboutMe h2 {
   font-size: 2rem;
   color: white;
-  margin-bottom: 2.5%;
+  margin-bottom: 5%;
   text-shadow: 2px 4px black;
 }
 .container .aboutMe p {
@@ -198,6 +224,15 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 10% 0;
+}
+@media (max-width: 500px) {
+  .container .middleContent {
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .middleContent h3 {
   font-size: 2rem;
@@ -217,12 +252,24 @@ body {
   line-height: 250%;
   width: 45%;
 }
+@media (max-width: 500px) {
+  .container .middleContent .workHistory {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+}
 .container .middleContent .goodAt {
   display: flex;
   flex-direction: column;
   line-height: 250%;
   width: 45%;
   padding-left: 15%;
+}
+@media (max-width: 500px) {
+  .container .middleContent .goodAt {
+    width: 90%;
+    padding: 0;
+  }
 }
 .container .contactMe {
   display: flex;
@@ -240,11 +287,16 @@ body {
   font-size: 1.5rem;
   margin-right: 25%;
 }
+@media (max-width: 500px) {
+  .container .contactMe form {
+    margin-right: 50%;
+  }
+}
 .container .contactMe form input {
   width: 150%;
   height: 20%;
 }
 .container .contactMe form #contentBox {
-  width: 200%;
-  height: 100px;
+  width: 150%;
+  height: 50px;
 }

@@ -80,6 +80,10 @@ html, body {
 body {
 	width: 1020px;
 	margin: 0 auto;
+	@media (max-width: 500px) {
+		width: 500px;
+		margin: 0 auto;
+	}
 }
 
 .container {
@@ -87,11 +91,23 @@ body {
 	padding: 10px;
 	background: lightslategray;
 
+	@media (max-width: 500px) {
+		width: 80%;
+		margin: 0 auto;
+		background: lightblue;
+	}
+
 	nav {
 		width: 50%;
 		display: flex;
 		justify-content: space-between;
 		margin: 5% 0 5% 50%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin: 0 auto;
+			padding: 5% 0;
+		}
 
 		a {
 			font-size: 1.2rem;
@@ -108,12 +124,17 @@ body {
 		justify-content: space-between;
 		margin: 5% 0;
 
+		@media (max-width: 500px) {
+			flex-direction: column-reverse;
+		}
+
 		h1 {
 			font-size: 4rem;
 			display: flex;
 			align-items: flex-end;
 			font-family: @fontStyle;
 			text-shadow: 2px 4px @fontColor2;
+			padding-top: 5%;
 		}
 	}
 
@@ -127,7 +148,7 @@ body {
 		h2 {
 			font-size: 2rem;
 			color: @fontColor2;
-			margin-bottom: 2.5%;
+			margin-bottom: 5%;
 			text-shadow: 2px 4px @fontColor;
 		}
 
@@ -140,6 +161,12 @@ body {
 	.middleContent {
 		.mixin-two();
 		margin: 10% 0;
+
+		@media (max-width: 500px) {
+			.mixin();
+			justify-content: center;
+			align-items: center;
+		}
 
 		h3 {
 			font-size: 2rem;
@@ -159,12 +186,22 @@ body {
 		.workHistory {
 			.mixin();
 			width: 45%;
+			
+			@media (max-width: 500px) {
+				width: 90%;
+				margin-bottom: 5%;
+			}
 		}
 
 		.goodAt {
 			.mixin();
 			width: 45%;
 			padding-left: 15%;
+
+			@media (max-width: 500px) {
+				width: 90%;
+				padding: 0;
+			}
 		}
 	}
 
@@ -183,14 +220,18 @@ body {
 			font-size: 1.5rem;
 			margin-right: 25%;
 
+			@media (max-width: 500px) {
+				margin-right: 50%;			
+			}
+
 			input {
 				width: 150%;
 				height: 20%;
 			}
 
 			#contentBox {
-				width: 200%;
-				height: 100px;
+				width: 150%;
+				height: 50px;
 			}
 
 		}
