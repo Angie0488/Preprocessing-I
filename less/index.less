@@ -92,10 +92,10 @@ body {
 .container {
 	width: 100%;
 	padding: 1%;
-	background: lightslategray;
+	background: slategray;
 
 	@media (max-width: 500px) {
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
 		background: lightblue;
 	}
@@ -139,6 +139,14 @@ body {
 			font-family: @fontStyle;
 			text-shadow: 2px 4px @fontColor2;
 			padding-top: 5%;
+
+			@media (max-width: 500px) {
+				font-size: 3.5rem;
+			}
+		}
+
+		.introImg {
+			box-shadow: 2px 4px 8px darkred;
 		}
 	}
 
@@ -148,6 +156,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		font-family: @fontStyle;
+		margin-top: 5%;
 
 		h2 {
 			font-size: 2rem;
@@ -158,6 +167,12 @@ body {
 
 		p {
 			font-size: 1.5rem;
+			line-height: 100%;
+			width: 75%;
+
+			@media (max-width: 500px) {
+				width: 100%;
+			}
 		}
 
 	}
@@ -213,7 +228,11 @@ body {
 		.mixin();
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 10%;
+		margin-bottom: 5%;
+		border: 3px solid @fontColor;
+		padding: 5% 0;
+		background: darkred;
+		
 
 		p {
 			font-size: 1.5rem;
@@ -233,12 +252,27 @@ body {
 				height: 20%;
 			}
 
-			#contentBox {
+			textarea {
 				width: 150%;
-				height: 50px;
+				margin-top: 5%;
+			}
+
+			button {
+				width: 100%;
+				background: @fontColor;
+				color: @fontColor2;
+				padding: 2.5% 0;
 			}
 
 		}
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+
 }
 
 }

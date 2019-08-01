@@ -159,11 +159,11 @@ body {
 .container {
   width: 100%;
   padding: 1%;
-  background: lightslategray;
+  background: slategray;
 }
 @media (max-width: 500px) {
   .container {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background: lightblue;
   }
@@ -207,12 +207,21 @@ body {
   text-shadow: 2px 4px white;
   padding-top: 5%;
 }
+@media (max-width: 500px) {
+  .container .intro h1 {
+    font-size: 3.5rem;
+  }
+}
+.container .intro .introImg {
+  box-shadow: 2px 4px 8px darkred;
+}
 .container .aboutMe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Courgette', cursive;
+  margin-top: 5%;
 }
 .container .aboutMe h2 {
   font-size: 2rem;
@@ -222,6 +231,13 @@ body {
 }
 .container .aboutMe p {
   font-size: 1.5rem;
+  line-height: 100%;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .container .aboutMe p {
+    width: 100%;
+  }
 }
 .container .middleContent {
   display: flex;
@@ -280,7 +296,10 @@ body {
   line-height: 250%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  padding: 5% 0;
+  background: darkred;
 }
 .container .contactMe p {
   font-size: 1.5rem;
@@ -299,7 +318,19 @@ body {
   width: 150%;
   height: 20%;
 }
-.container .contactMe form #contentBox {
+.container .contactMe form textarea {
   width: 150%;
-  height: 50px;
+  margin-top: 5%;
+}
+.container .contactMe form button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 2.5% 0;
+}
+.container .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
