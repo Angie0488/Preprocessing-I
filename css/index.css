@@ -1,1 +1,336 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* MY CODE */
+.mixin {
+  display: flex;
+  flex-direction: column;
+  line-height: 250%;
+}
+.mixin-two {
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  width: 100%;
+  max-width: 1020px;
+  padding: 1%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container {
+  width: 100%;
+  padding: 1%;
+  background: slategray;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background: lightblue;
+  }
+}
+.container nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0 5% 50%;
+}
+@media (max-width: 500px) {
+  .container nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+}
+.container nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Courgette', cursive;
+  text-shadow: 1px 3px white;
+}
+.container .intro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .container .intro {
+    flex-direction: column-reverse;
+  }
+}
+.container .intro h1 {
+  font-size: 4rem;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Courgette', cursive;
+  text-shadow: 2px 4px white;
+  padding-top: 5%;
+}
+@media (max-width: 500px) {
+  .container .intro h1 {
+    font-size: 3.5rem;
+  }
+}
+.container .intro .introImg {
+  box-shadow: 2px 4px 8px darkred;
+}
+.container .aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courgette', cursive;
+  margin-top: 5%;
+}
+.container .aboutMe h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 5%;
+  text-shadow: 2px 4px black;
+}
+.container .aboutMe p {
+  font-size: 1.5rem;
+  line-height: 100%;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .container .aboutMe p {
+    width: 100%;
+  }
+}
+.container .middleContent {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0;
+}
+@media (max-width: 500px) {
+  .container .middleContent {
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .middleContent h3 {
+  font-size: 2rem;
+  font-family: 'Courgette', cursive;
+  margin-bottom: 5%;
+  text-decoration: underline;
+}
+.container .middleContent ul {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  list-style: square;
+  font-size: 1.5rem;
+}
+.container .middleContent .workHistory {
+  display: flex;
+  flex-direction: column;
+  line-height: 250%;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .container .middleContent .workHistory {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+}
+.container .middleContent .goodAt {
+  display: flex;
+  flex-direction: column;
+  line-height: 250%;
+  width: 45%;
+  padding-left: 15%;
+}
+@media (max-width: 500px) {
+  .container .middleContent .goodAt {
+    width: 90%;
+    padding: 0;
+  }
+}
+.container .contactMe {
+  display: flex;
+  flex-direction: column;
+  line-height: 250%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  padding: 5% 0;
+  background: darkred;
+}
+.container .contactMe p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.container .contactMe form {
+  font-size: 1.5rem;
+  margin-right: 25%;
+}
+@media (max-width: 500px) {
+  .container .contactMe form {
+    margin-right: 50%;
+  }
+}
+.container .contactMe form input {
+  width: 150%;
+  height: 20%;
+}
+.container .contactMe form textarea {
+  width: 150%;
+  margin-top: 5%;
+}
+.container .contactMe form button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 2.5% 0;
+}
+.container .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}

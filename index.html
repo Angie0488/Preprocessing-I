@@ -6,6 +6,8 @@
 
   <title>My Resume</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Saira+Stencil+One&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +16,72 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  
+  <section class="container">
+  
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Skills</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  <div class="intro">
+    <h1>Angie Lawrence</h1>
+    <img class="introImg" src="https://images.pexels.com/photos/2585916/pexels-photo-2585916.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+  </div>
+  </header>
+
+  <div class="aboutMe">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+<div class="middleContent">
+  
+  <div class="workHistory">
+    <h3>Previous Work History</h3>
+    <ul>
+      <li>Limeys LunchBox, 2015-2016, Cashier</li>
+      <li>The Meadows at East Mountain, 2016-2017, Resident Aide</li>
+      <li>Rite Aide, 2017-present, cashier/clerk</li>
+    </ul>
+  </div>
+
+  <div class="goodAt">
+    <h3>Things I Am Good At:</h3>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Reading</li>
+      <li>Taking care of my children</li>
+      <li>Typing</li>
+      <li>Taking care of my snake</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="contactMe">
+  <p>Looking for someone to build you a website? Fill out the form below:</p>
+
+  <form>
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      Email Address:<br>
+      <input type="text" name="emailAddress"><br>
+      Questions/Comments:<br>
+      <textarea name="message" rows="10" cols="40".>
+      </textarea><br>
+        <button type="button" onclick="alert('Thank You!')">Submit</button>
+    </form>
+
+</div>
+<div class="copyright">
+  <p>Copyright Angie 2019</p>
+</div>
+</section>
+
 </body>
+
 </html>
